@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  int num, fatorial, i;
+
+  cout << "Informe um número não negativo maior que 0: ";
+  cin >> num;
+
+  if (num <= 0) {
+    cout << "Inválido";
+  }
+
+  else {
+    fatorial = 1;
+    for (i = 1; i <= num; i++) {
+    fatorial *= i;
+    }
+
+    cout << "O fatorial é: " << fatorial << endl;
+  }
+}
